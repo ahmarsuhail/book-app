@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 
-mongoose.connect('mongodb://ahmar:ahmar123@ds047335.mlab.com:47335/library');
+mongoose.connect('mongodb://<username>:<password>@ds047335.mlab.com:47335/library');
 mongoose.connection.once('open', () => {
     console.log("Connected");
 });
